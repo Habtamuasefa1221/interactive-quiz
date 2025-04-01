@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Time!</h1>
+
+        <div id="subject-selection">
+            <button class="subject-card" data-subject="agriculture">
+                <img src="agriculture.png" alt="Agriculture">
+                <span>Agriculture</span>
+            </button>
+            <button class="subject-card" data-subject="biology">
+                <img src="biology.png" alt="Biology">
+                <span>Biology</span>
+            </button>
+            <button class="subject-card" data-subject="chemistry">
+                <img src="chemistry.png" alt="Chemistry">
+                <span>Chemistry</span>
+            </button>
+            <button class="subject-card" data-subject="mathematics">
+                <img src="mathematics.png" alt="Mathematics">
+                <span>Mathematics</span>
+            </button>
+             <button class="subject-card" data-subject="english">
+                <img src="english.png" alt="English">
+                <span>English</span>
+            </button>
+             <button class="subject-card" data-subject="physics">
+                <img src="physics.png" alt="Physics">
+                <span>Physics</span>
+            </button>
+            <button class="subject-card" data-subject="webdev">
+                <img src="webdev.png" alt="Web Design & Dev">
+                <span>Web Design & Dev</span>
+            </button>
+            <button class="subject-card" data-subject="ict">
+                <img src="ict.png" alt="ICT">
+                <span>ICT</span>
+            </button>
+        </div>
+
+        <!-- The Modal -->
+        <div id="quizModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="quiz">
+                    <div id="question"></div>
+                    <div id="choices">
+                        <!-- Choices will be dynamically added here -->
+                    </div>
+                </div>
+                <button id="next-btn">Next Question</button>
+                <div id="results"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    background: linear-gradient(to bottom, #e0f2f1, #b2dfdb); /* Soothing gradient background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white container */
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Allow container to grow and fill vertical space */
+}
+
+h1 {
+    text-align: center;
+    color: #00796b; /* Darker teal for heading */
+    margin-bottom: 30px;
+}
+
+/* Subject Selection Styles (Gallery Layout) */
+#subject-selection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
+    grid-gap: 25px;
+    padding: 20px;
+    justify-content: center; /* Center the grid */
+    width: 90%;
+    margin: 20px auto;
+}
+
+.subject-card {
+    padding: 20px;
+    border: none;
+    background-color: #80cbc4; /* Teal color for cards */
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.3em;
+    width: 100%; /* Fill the grid cell */
+    height: auto;
+    display: flex; /*Flexbox layout*/
+    flex-direction: column; /*Flexbox layout*/
+    align-items: center; /*Flexbox layout*/
+    justify-content: center; /*Flexbox layout*/
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow for cards */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.subject-card:hover {
+    transform: scale(1.05); /* Slightly larger on hover */
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+    background-color: #4db6ac; /*Lighter teal on hover*/
+}
+
+.subject-card img {
+    max-width: 80%; /* Slightly smaller images */
+    max-height: 150px; /*Adjusted image height*/
+    margin-bottom: 15px; /*Increased spacing*/
+    border-radius: 10px; /* Round image corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
+}
+
+.subject-card span {
+    font-weight: 600; /* Semi-bold text */
+    font-size: 1.2em;  /*Slightly larger text*/
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /*Text shadow*/
+}
+
+/* Modal Styles (unchanged) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 0;
+    padding: 20px;
+    border: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.close:hover,
+.close:focus {
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Quiz Styles (unchanged) */
+#quiz {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+#question {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#choices {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+}
+
+#choices button {
+    padding: 20px;
+    margin: 10px 0;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: background-color 0.3s ease;
+    text-align: left;
+    position: relative;
+    padding-left: 50px;
+}
+
+#choices button::before {
+    content: attr(data-letter);
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    color: #fff;
+    font-size: 0.8em;
+}
+
+#choices button:hover {
+    background-color: #0056b3;
+}
+
+#next-btn {
+    padding: 20px 40px;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+#next-btn:hover {
+    background-color: #1e7e34;
+}
+
+#results {
+    font-size: 2.0em;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.correct {
+    background-color: #28a745 !important;
+    color: #fff;
+}
+
+.incorrect {
+    background-color: #dc3545 !important;
+    color: #fff;
+}

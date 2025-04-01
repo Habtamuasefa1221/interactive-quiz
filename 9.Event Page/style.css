@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+  }
+  
+  main {
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  section {
+    margin-bottom: 2em;
+  }
+  
+  h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5em;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+  }
+  
+  .speaker {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  
+  .speaker img {
+    margin-right: 1em;
+    border-radius: 50%;
+  }
+  
+  #registration label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+  }
+  
+  #registration input[type="text"],
+  #registration input[type="email"],
+  #registration select {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 1em 2em;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+  }
+  

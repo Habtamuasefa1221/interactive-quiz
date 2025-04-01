@@ -1,0 +1,113 @@
+/* style.css */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #fff;
+    padding: 3em 2em;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    margin: 1em 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1em 2em;
+    background-color: #007bff; /* Blue */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Darker Blue */
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+.benefits, .features, .testimonials {
+    margin-bottom: 2em;
+    text-align: left;
+}
+
+.benefits h2, .features h2, .testimonials h2 {
+    font-size: 2em;
+    margin-bottom: 0.8em;
+}
+
+.benefits ul, .features ul {
+    list-style: disc;
+    margin-left: 2em;
+}
+
+.benefits li, .features li {
+    margin-bottom: 0.5em;
+}
+
+.testimonials {
+    text-align: center;
+}
+
+.testimonial {
+    margin-bottom: 1.5em;
+    padding: 1.5em;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-author {
+    font-style: italic;
+    color: #777;
+}
+@media (max-width: 768px) {
+    header {
+        padding: 2em 1em;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    main {
+        padding: 1.5em;
+    }
+
+    .benefits ul, .features ul {
+        margin-left: 1.5em;
+    }
+
+    .testimonial {
+        padding: 1em;
+    }
+}
